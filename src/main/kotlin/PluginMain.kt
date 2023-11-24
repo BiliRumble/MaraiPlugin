@@ -1,4 +1,4 @@
-package org.example.mirai.plugin
+package top.whcraft.MaraiPlugin
 
 import net.mamoe.mirai.console.permission.AbstractPermitteeId
 import net.mamoe.mirai.console.permission.PermissionService
@@ -34,18 +34,11 @@ import net.mamoe.mirai.utils.info
 
 object PluginMain : KotlinPlugin(
     JvmPluginDescription(
-        id = "org.example.mirai-example",
-        name = "插件示例",
+        id = "top.whcraft.MaraiPlugin",
+        name = "MiraiBotMinecraft",
         version = "0.1.0"
     ) {
-        author("作者名称或联系方式")
-        info(
-            """
-            这是一个测试插件, 
-            在这里描述插件的功能和用法等.
-        """.trimIndent()
-        )
-        // author 和 info 可以删除.
+        author("rumble/WhCraftMC")
     }
 ) {
     override fun onEnable() {
