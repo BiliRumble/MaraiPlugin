@@ -47,13 +47,11 @@ jobs:
         run: chmod +x ./gradlew
       - name: Build with Gradle
         run: ./gradlew build
-      - name: list
-        if: false
-        run: ls
+      - name: Compress files
+        run: tar -czf Artifact.zip ./*
+
       - name: Upload artifact
-        if: true
         uses: actions/upload-artifact@v2
         with:
-          name: Artifacts
-          path: ./buid/mirai/*
-
+          name: Artifact
+          path: Artifact.zip

@@ -24,11 +24,8 @@ suspend fun main() {
     //如果是Kotlin
     PluginMain.load()
     PluginMain.enable()
-    //如果是Java
-//    JavaPluginMain.INSTANCE.load()
-//    JavaPluginMain.INSTANCE.enable()
 
-    val bot = MiraiConsole.addBot(123456, "") {
+    val bot = MiraiConsole.addBot(3814106534, "pq2951327332") {
         fileBasedDeviceInfo()
     }.alsoLogin()
 
