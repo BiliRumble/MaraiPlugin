@@ -22,8 +22,8 @@ suspend fun main() {
     MiraiConsoleTerminalLoader.startAsDaemon()
 
     //如果是Kotlin
-    PluginMain.load()
-    PluginMain.enable()
+    Main.load()
+    Main.enable()
 
     val bot = MiraiConsole.addBot(3814106534, "pq2951327332") {
         fileBasedDeviceInfo()

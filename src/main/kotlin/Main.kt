@@ -32,7 +32,7 @@ import net.mamoe.mirai.utils.info
  * 不用复制到 mirai-console-loader 或其他启动器中调试
  */
 
-object PluginMain : KotlinPlugin(
+object Main : KotlinPlugin(
     JvmPluginDescription(
         id = "top.whcraft.MaraiPlugin",
         name = "MiraiBotMinecraft",
