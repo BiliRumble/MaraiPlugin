@@ -48,11 +48,12 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
       - name: list
+        if: false
         run: ls
       - name: Upload artifact
-        if: false
+        if: true
         uses: actions/upload-artifact@v2
         with:
           name: Artifacts
-          path: /*
+          path: ./*
 
