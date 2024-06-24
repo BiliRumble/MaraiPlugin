@@ -1,1 +1,1 @@
-rootProject.name = "MiraiBotMinecraft"
+rootProject.name = "MessageLimit"
