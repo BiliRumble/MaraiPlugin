@@ -61,6 +61,9 @@ object Main : KotlinPlugin(JvmPluginDescription(id = "top.rumble.AutoMute", name
                             preMessage = message.serializeToMiraiCode()
                             num = 1
                         }
+                    } else if (Config.Notify) {
+                        bot.friends[Config.NotifyID]?.sendMessage(Config.NotifyMessage.replace("[&G]", group.id.toString()).replace("[&B]", bot.id.toString()))
+                        logger.warning((Config.NotifyMessage.replace("[&G]", group.id.toString()).replace("[&B]", bot.id.toString())))
                     }
                 }
             }
