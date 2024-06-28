@@ -10,14 +10,13 @@ import net.mamoe.mirai.message.data.At
 import top.whcraft.AutoMute.Tools.TimeTool
 import java.util.*
 
-object Main : KotlinPlugin(JvmPluginDescription(id = "top.rumble.GroupAdmin", name = "GroupAdmin", version = "0.1.1") { author("rumble/WhCraftMC") }) {
+object Main : KotlinPlugin(JvmPluginDescription(id = "top.rumble.AutoMute", name = "AutoMute", version = "1.0.1") { author("rumble/WhCraftMC") }) {
     private val map = Data.mutableMap
 
     override fun onEnable() {
-        val eventChannel = GlobalEventChannel.parentScope(this)
-
         Config.reload()
         Data.reload()
+
         // 自检数据
         if (Config.TimeMin < 0 || Config.TimeMax < 0 || Config.Timer < 0 || Config.ClearTime < 0 || Config.MaxCount <= 0 || Config.TimeRange < 0) {
             throw IllegalArgumentException("配置文件中存在非法数值")
@@ -65,7 +64,7 @@ object Main : KotlinPlugin(JvmPluginDescription(id = "top.rumble.GroupAdmin", na
                     }
                 }
             }
-            logger.info("GroupAdmin 载入成功!")
+            logger.info("AutoMute 载入成功!")
         }
 
         //配置文件目录 "${dataFolder.absolutePath}/"
