@@ -2,12 +2,13 @@ plugins {
     val kotlinVersion = "1.7.21"
     kotlin("jvm") version kotlinVersion
     kotlin("plugin.serialization") version kotlinVersion
+    kotlin("kapt") version kotlinVersion
 
-    id("net.mamoe.mirai-console") version "2.13.2"
+    id("net.mamoe.mirai-console") version "2.15.0"
 }
 
 group = "top.rumble"
-version = "1.0.0"
+version = "1.0.1"
 
 repositories {
     if (System.getenv("CI")?.toBoolean() != true) {

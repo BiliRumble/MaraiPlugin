@@ -1,3 +1,3 @@
-# MiraiBotMinecraft
-简单的 MiraiConsole 插件。
-当前版本: V0.1.0
+# AutoMute
+简单的 MiraiConsole 插件。<br/>
+部分代码来源: [miraimuteplugin](https://github.com/JOYACEpoor/miraimuteplugin)

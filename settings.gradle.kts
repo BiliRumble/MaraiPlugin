@@ -1,1 +1,1 @@
-rootProject.name = "MessageLimit"
+rootProject.name = "AutoMute"
